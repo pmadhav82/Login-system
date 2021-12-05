@@ -1,0 +1,383 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+  }
+.wrapper{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+  .head{
+      margin-top: 20px;
+      color: #fff;
+      border-bottom: 2px solid;
+
+  }
+  .options{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin-top: 5rem;
+    font-size: 2rem;  
+    align-content: space-around;
+    gap: 3rem;
+  }
+  .options a{
+      text-decoration: none;
+      color: white;
+  }
+  .options a:hover{
+  color: aqua;
+  }
+
+body{
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+}
+.singup-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+   min-width: 300px;
+   max-width: 800px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;  
+}
+.singup-box .user-input {
+    position: relative;
+}
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+   min-width: 300px;
+   max-width: 800px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  .singup-box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+
+  .singup-box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .singup-box input[type = "submit"]{
+      border-bottom: none;
+  }
+  .singup-box label{
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+form input[type = "submit"]{
+    cursor: pointer;
+}
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  .haveaccount{
+      color: white;
+  }
+  .haveaccount a{
+    text-decoration: none;
+    color: white;
+  }
+  .haveaccount a:hover{
+      color:aqua;
+  }
+  .create a{
+    text-decoration: none;
+    color: white;
+    margin-left: 60%;
+    margin-top: 95%;
+  }
+  .create a:hover{
+    color: aqua;
+  }
+  .messages{
+    color:#fff;
+    margin-top: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .forgot a{
+    text-decoration: none;
+    color: white;
+    margin-left: 1%;
+    margin-top: 95%;
+  }
+  .forgot a:hover{
+    color: aqua;
+  }
+  h2{
+    color: #fff;
+  }
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -25px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+  }
+  .singup-box .user-input input:focus ~ label,
+  .singup-box .user-input input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+  }
+
+  
+.reset-box{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    background-color:#044;
+    width:400px;
+    min-width: 200px;
+    max-width: 600px;
+    padding:30px;
+    border-radius:10px;
+  }
+  .title h2{
+    margin:0;
+    padding:0;
+    text-align: center;
+    margin-bottom:30px;
+    color:#fff;
+    letter-spacing:2px;
+  }
+  .input input{
+    background-color:transparent;
+    border:none;
+    outline:none;
+    border-bottom: 1px solid #fff;
+    padding:10px 0;
+    margin-bottom:30px;
+    font-size: 1em;
+    color:#fff;
+    width:100%;
+  }
+  .input{
+    position:relative;
+  }
+  .input label{
+    position:absolute;
+    left:0;
+    top: 0;
+    color:#fff;
+    transition: 1s;
+  }
+  
+  .input input:focus ~ label, .input input:valid ~ label{
+    top:-18px;
+    color: #03a9f4;
+    
+  }
+  
+ input[type="submit"]{
+    background-color:#03a9f4;
+    padding: 10px 20px;
+    margin:0;
+    outline:none;
+    width:100%;
+    cursor:pointer;
+    border-radius:5px;
+  }
+  
+.main{
+  background-color: #008;
+  position:absolute;
+  width:500px;
+  height:300px;
+  left: 50%;
+  top:50%;
+  transform:translate(-50%,-50%)
+}
+.intro{
+  text-align:center;
+  color:#fff;
+}
+
+@media(max-width:480px){
+  .main{
+    width: 100%;
+    padding: 70px;
+  }
+  .logout{
+    margin-left: 50px;
+  }
+  .delete{
+    margin-right: 50px;
+  }
+  table{
+    margin-left: 25px;
+  }
+}
+.intro th, td {
+  border: 1px solid #fff;
+  padding: 5px;
+}
+.intro table{
+  border-collapse: collapse;
+ width: 90%;
+  margin-left: 5%;
+  padding:10px;
+  height: 100px;
+}
+.main h2{
+  margin:0;
+  padding:0;
+  margin-bottom:20px;
+  color:#fff;
+  text-align: center;
+  letter-spacing:2px;
+  border-bottom: 2px solid #fff;
+  padding:10px;
+  
+}
+.foot{
+  position:relative;
+  margin-top: 80px;
+}
+.logout{
+ position:absolute;
+  left : 0;
+  padding: 5px;
+}
+.delete{
+  position:absolute;
+  right:0;
+  padding: 5px;
+}
+.foot a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1em;
+  background-color: #000;
+  
+  
+}
+
+.main{
+  background-color: #008;
+  position:absolute;
+  width:500px;
+  height:300px;
+  left: 50%;
+  top:50%;
+  transform:translate(-50%,-50%)
+}
+.intro{
+  text-align:center;
+  color:#fff;
+}
+.intro th, td {
+  border: 1px solid #fff;
+  padding: 5px;
+}
+.intro table{
+  border-collapse: collapse;
+ width: 90%;
+  margin-left: 5%;
+  padding:10px;
+  height: 100px;
+}
+.main h2{
+  margin:0;
+  padding:0;
+  margin-bottom:20px;
+  color:#fff;
+  text-align: center;
+  letter-spacing:2px;
+  border-bottom: 2px solid #fff;
+  padding:10px;
+  
+}
+.foot{
+  position:relative;
+  margin-top: 80px;
+}
+.logout{
+ position:absolute;
+  left : 0;
+  padding: 5px;
+}
+.delete{
+  position:absolute;
+  right:0;
+  padding: 5px;
+}
+.foot a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1em;
+  background-color: #000;
+  
+  
+}
+.foot a:hover{
+  color: aqua;
+}

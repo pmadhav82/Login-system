@@ -1,0 +1,44 @@
+
+  <div class = wrapper> 
+    <div class = reset-box> 
+    <div class = title>
+      <h2> Reset Password </h2>
+      </div>
+       <div class="messages">
+         <p>{{passMatch}}</p>
+         <br>
+          <p>{{passLength}}</p> 
+          <br>
+          {{notMatch}}
+    </div>
+      <form action="reset" method="POST"> 
+        <div class = input> 
+          <input type = "text" name = "name" required> <label>Name</label>
+        </div>
+      
+         <div class = input> 
+          <input type = "text" name="email" required> <label>Email</label>
+        </div>
+      
+         <div class = input> 
+          <input type = "password" name="password" required> <label>New Password</label>
+        </div>
+        
+         <div class = input> 
+          <input type = "password" name="repeatpassword" required> <label>Repeat Password</label>
+        </div>
+        <div class = "update"> 
+        <input type = "submit" value = "Reset Password">
+        </div>
+      </form>
+      
+<div class="haveaccount">
+    
+    <a href="/login">Login with different ID</a>
+</div>
+
+    </div>
+  
+  </div>
+  
+  
